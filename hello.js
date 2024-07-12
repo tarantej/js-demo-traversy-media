@@ -72,3 +72,97 @@ console.log(person)
 let a,b,c
 
 const d = 10, e = 20, f = 30;
+
+// Data Types
+
+// 1. Primitive Data Types
+// 2. Reference or Object Data Types
+
+// Primitive Data Types
+
+/*
+
+String - Sequence of characters. Must be in quotes or backticks
+Number - Integers as well as floating point numbers
+Boolean - Logical entity / true or false
+Null - Intentional abscence of any object or value
+Undefined - A variable that has not been defined / assigned
+Symbol - Built in object whose contructor returns a unique symbol
+BigInt - Numbers that are greater than the "Number" type can handle
+
+*/
+
+// Reference Types (Objects)
+
+// Reference types or "objects" are a non-primitive value and when assigned to a variable, the variable is given a reference to that value
+
+// Object literals, arrays and functions are all reference types
+
+// Static Types vs Dynamic Types
+
+/*
+
+JavaScript is a dynamically-typed language. This means, we do not explicitly define the types for our variables. Many other languages are statically-typed  such as C, C++ and Java
+
+TypeScript is a superset of JavaScript, which allows static-typing. This can make your code more verbose and less prone to errors.
+
+*/
+
+
+// String
+
+let fName = 'Sara'
+
+// Number
+
+let Age = 50
+
+// Decimal / Float
+
+let temp = 98.9
+
+// Boolean - True / False Value
+
+let hasKids = true;
+
+// Null - intentional empty value
+
+let aptNum = null;
+
+// Undefined - When a value is not defined
+
+let testScore;
+
+// Symbol
+
+let id = Symbol('id')
+
+// BigInt - Too big for the number type
+
+
+
+let output = id;
+
+// Reference Types
+
+// Arrays, Object literals, Functions/Methods
+
+// Arrays 
+
+let numRefType = [1,2,3,4,5]
+
+// Object Literals
+
+let person1 = {
+    name:'Brad',
+};
+
+// Functions / Methods
+
+function sayHello(){
+    console.log('Hello');
+}
+
+console.log(output, typeof output)
+
+
