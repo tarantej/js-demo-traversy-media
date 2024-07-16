@@ -165,4 +165,133 @@ function sayHello(){
 
 console.log(output, typeof output)
 
+// Type Conversion / Type Casting
+
+/*
+
+It is the process of explicitly of converting a value from one type to another
+
+*/
+
+// Change string to number
+
+let amount = '100'
+
+amount = parseInt(amount);
+
+// Using Urnary Operator (+)
+
+// amount = +amount;
+
+// Using Number Constructor
+
+// amount= Number(amount)
+
+console.log(amount, typeof amount)
+
+// Change Number to String
+
+let numtoStr = 100
+
+numtoStr.toString();
+
+// When we use a method like toString, JavaScript creates a temporary wrapper of the associated type that converts one data type to another
+
+console.log(numtoStr, typeof numtoStr)
+
+// Convert String to Decimal
+
+let FltoStr = '99.5'
+
+FltoStr = parseFloat(FltoStr);
+
+console.log(FltoStr, typeof FltoStr)
+
+// Boolean Constructor  - Change number to Boolean
+
+let numbool = 1
+
+numbool = Boolean(numbool);
+
+console.log(numbool, typeof numbool)
+
+//  NaN - Not a Number 
+
+let nanum = 'hello'
+
+nanum = parseInt(nanum);
+
+console.log(nanum, typeof nanum);
+
+// Operators
+
+/*
+
+Symbols that we can use in various expressions for performing tasks
+
+*/
+
+// 1. Arithmetic Operators
+
+let x;
+
+x = 5 + 5;
+x = 5 - 5;
+x = 5 * 5;
+x = 5 / 5;
+x = 7 % 5;
+
+// Concatenation
+x = 'Hello' + ' ' + 'World';
+
+// Exponent
+x = 2 ** 3;
+
+// Increment
+x = 1;
+// x = x + 1;
+x++;
+
+// Decrement
+// x = x - 1;
+x--;
+
+// 2. Assignment Operators
+
+x = 10;
+
+x += 5;
+x -= 5;
+x *= 5;
+x /= 5;
+x %= 5;
+x **= 5;
+
+// 3. Comparison Operators
+
+// Equal to (Just the value, not the type)
+x = 2 == '2';
+
+// Equal to (Type and value)
+x = 2 === '2';
+
+// Not equal to (Just the value, not the type)
+x = 2 != '2';
+
+// Not equal to (Type and value)
+x = 2 !== 2;
+
+// Greater than and less than
+x = 10 > 5;
+x = 10 < 5;
+x = 10 <= 5;
+x = 10 >= 5;
+
+console.log(x);
+
+// Type Coercion
+
+/*
+    Changing your variable type implicitly
+*/
 
