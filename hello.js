@@ -291,7 +291,28 @@ console.log(x);
 
 // Type Coercion
 
+
+
 /*
     Changing your variable type implicitly
+    Happens when you apply values to operators that have different types
 */
 
+
+let anyValue;
+
+anyValue = 5 + '5' //  JavaScript will implicitly convert the number datatype to string and pass the data as string
+
+// Wrap as Number
+
+anyValue = 5 + Number('5')
+
+// Multiply
+
+anyValue = 5 * '5'
+
+// Null
+
+anyValue = 5 + null
+
+console.log(anyValue, typeof anyValue)
