@@ -291,8 +291,6 @@ console.log(x);
 
 // Type Coercion
 
-
-
 /*
     Changing your variable type implicitly
     Happens when you apply values to operators that have different types
@@ -316,3 +314,82 @@ anyValue = 5 * '5'
 anyValue = 5 + null
 
 console.log(anyValue, typeof anyValue)
+
+// Individual Data Types
+
+// Strings
+
+let StrX;
+
+let custName = 'John';
+let custAge = '40'
+
+// Concatenation  - Joining Two strings
+
+// StrX = "The customer's name is " +custName+ " and their age is "+custAge+ " years old";
+
+// Template Literals
+// came into Javascript after ES6
+
+// StrX = `The customer's name is  ${custName} and their age is ${custAge} years old`;
+
+console.log(StrX);
+
+// String Properties and Methods
+
+let StrY = 'Hello World';
+
+// Length
+
+// StrX = StrY.length;
+
+// Access Value by key
+
+StrX  = StrY[0];
+
+// Object Prototype - All method functions
+
+StrX = StrY.__proto__;
+
+// toUpperCase()
+
+StrX = StrY.toUpperCase();
+
+// toLowerCase()
+
+StrX = StrY.toLowerCase();
+
+// charAt()
+
+StrX = StrY.charAt(0);
+
+// indexOf
+
+StrX = StrY.indexOf('W');
+
+// substring() - Search a string for a specified value
+
+StrX = StrY.substring(0,4);
+
+// slice() - Similar to substring() but can also start from the end with negative numbers
+
+StrX = StrY.slice(-6,-1);
+
+// trim() - Trims the white space
+
+// replace() - replace string within a string
+
+let customerName = 'John'
+
+StrX = StrY.replace('World', custName);
+
+// includes() - if a certain string is found withing the string; returns true or false
+
+// valueOf() - return primitive
+
+console.log(StrX);
+
+
+
+
+
