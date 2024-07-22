@@ -333,7 +333,7 @@ let custAge = '40'
 
 // StrX = `The customer's name is  ${custName} and their age is ${custAge} years old`;
 
-console.log(StrX);
+// console.log(StrX);
 
 // String Properties and Methods
 
@@ -390,6 +390,131 @@ StrX = StrY.replace('World', custName);
 console.log(StrX);
 
 
+// Capitalize Challenge
+
+/*
+
+We have arrived at our first challenge. Every once in a while Brad is going to ask you to figure out a problem or do something using what we have already learned. He will not ask you to do a challenge that involves doing something that we have not yet gone over.
+
+If you feel stuck and can not figure it out on your own, that is absolutely fine. He will walk you through the solution(s), so that you can understand how to solve the problem.
+
+**Instructions**:
+
+Take the variable `myString` and capitalize the first letter of the word using some of the methods that we talked about in the last video. Put the result in a variable called `myNewString`.
+
+Create multiple solutions if you would like.
+
+**Expected Result:**
+
+```JavaScript
+const myString = 'developer';
+
+console.log(myNewString); // 'Developer'
+```
+
+**Hints:**
+
+1. You can use the `charAt()` method as well as `string[index]` to get the character at a specific index.
+2. The `.toUpperCase()` method will make the entire string uppercase
+3. `substring()` or `slice()` will return a specific portion of a string
+
+*/
 
 
+// Challenge Solution
 
+let myString = 'developer'
+
+// Find the index of the letter to be capitalized
+
+let findIndex = myString.indexOf('d')
+
+// Capitalize the letter
+
+let capitalize = myString.charAt(findIndex).toUpperCase();
+
+// Except for the first character, show the rest of the string
+
+let restofit = myString.substring(1)
+
+// Combine the capitalized letter and the rest of the string
+
+let myNewString = `The new word is ${capitalize}${restofit}`
+
+// Solution 2 - Directly put findIndex with the string,capitalize and concatenate with restofit
+
+let myNewString2 = myString[findIndex].toUpperCase()+restofit;
+
+
+console.log(myNewString2)
+
+// Numbers
+
+let num  = 5;
+
+// Number as an object
+
+num = new Number(5);
+
+let numout;
+
+// Number as a String
+
+numout = num.toString(); 
+
+// Specifiy decimal points
+
+numout = num.toFixed(2);
+
+// toPrecision()
+
+numout = num.toPrecision(2)
+
+// toExponential()
+
+numout = num.toExponential(2)
+
+// toLocaleString
+
+numout = num.toLocaleString('en-IN')
+
+console.log(numout)
+
+// Math Object
+
+let MathNum;
+
+// Square Root
+
+MathNum = Math.sqrt(9);
+
+// Absolute Number
+
+MathNum = Math.abs(5);
+
+// Round
+
+MathNum  = Math.round(4.6);
+
+// Round up
+
+MathNum = Math.ceil(4.2);
+
+// Round down
+
+MathNum = Math.floor(4.9);
+
+// Pow
+
+MathNum = Math.pow(2,3);
+
+// Min (Smallest number) / Max (Largest Number)
+
+MathNum = Math.min(4,5,3)
+MathNum = Math.max(4,5,3)
+
+// Random
+
+MathNum = Math.random();
+
+console.log(MathNum)
