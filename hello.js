@@ -518,3 +518,60 @@ MathNum = Math.max(4,5,3)
 MathNum = Math.random();
 
 console.log(MathNum)
+
+// Number Challenge
+
+/*
+
+**Instructions:**
+
+Create a variable called `x` that is a random number between 1 and 100 along with a variable called `y` that is a random number between 1 and 50.
+
+Create a variable for the sum, difference, product, quotient and remainder of `x` and `y`. Log the output in a string that shows the two numbers of `x` and `y` along with the operator and result.
+
+- You can log the output string directly or put them in separate variables and log them like below.
+- You can use string concatenation or template literals for the output.
+
+**Expected Result:**
+
+```JavaScript
+console.log(sumOutput); // 31 + 15 = 46
+console.log(differenceOutput); // 31 - 15 = 16
+console.log(productOutput); // 31 * 15 = 465
+console.log(quotientOutput); // 31 / 15 = 2.066666666666667
+console.log(rmOutput); // 31 % 15 = 1
+```
+
+**Hints:**
+
+1. The `Math.random()` function returns a floating-point, pseudo-random number in the range 0 to less than 1
+
+2. The `Math.floor()` function will round a number down to the nearest integer
+
+<details>
+  <summary>Click For Solution</summary>
+  
+  ```JavaScript
+x = Math.floor(Math.random() * 100) + 1;
+y = Math.floor(Math.random() * 50) + 1;
+
+*/
+
+// Solution
+
+let randomX = Math.floor(Math.random() * 100) +1;
+let randomY = Math.floor(Math.random() * 50) +1;
+
+let randomSum = randomX + randomY;
+let randomSub = randomX - randomY;
+let randomMul = randomX * randomY;
+let randomDiv = randomX / randomY;
+let randomMod = randomX % randomY;
+
+console.log(`Random sum between ${randomX} and ${randomY} is ${randomSum}`);
+console.log(`Random subtraction between ${randomX} and ${randomY} is ${randomSub}`);
+console.log(`Random multiplication between ${randomX} and ${randomY} is ${randomMul}`);
+console.log(`Random division between ${randomX} and ${randomY} is ${randomDiv}`);
+console.log(`Random modulas between ${randomX} and ${randomY} is ${randomMod}`);
+
+
