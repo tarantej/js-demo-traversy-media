@@ -575,3 +575,63 @@ console.log(`Random division between ${randomX} and ${randomY} is ${randomDiv}`)
 console.log(`Random modulas between ${randomX} and ${randomY} is ${randomMod}`);
 
 
+// Date and Time
+
+// Date - Represents a point in time and lets you do some operations on the object
+
+// Passing values
+
+// Since Month is 0 based so to show January the value will be 0
+
+let daDate = new Date(2024, 6, 30, 12, 30);
+
+// Passing as String
+
+daDate = new Date('2024-7-30');
+
+// If you use hyphens and add the year first there could be issues in the date due to timezones
+
+// Timestamp - integer that represents the number of seconds passed since january 1st 1970. This timestamp is expressed in miliseconds
+
+daDate = Date.now();
+
+console.log(daDate);
+
+// Date Methods and DateTime Format API
+
+// Instantiating / Initializing Date object
+
+let daDate2 = new Date();
+let daDate3;
+
+// Get specific parts of the Date
+
+// Get the year
+
+daDate3 = daDate2.getFullYear();
+
+// getMonth - Since Month is 0 based, we will have to add 1 inorder to get the correct month
+
+daDate3 = daDate2.getMonth()+1;
+
+// getDate
+
+daDate3 = daDate2.getDate();
+
+// getDay
+
+daDate3 = daDate2.getDay();
+
+// Date API
+
+daDate3 = Intl.DateTimeFormat('default').format(daDate2);
+
+console.log(daDate3);
+
+
+
+
+
+
+
+
