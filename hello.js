@@ -629,8 +629,81 @@ daDate3 = Intl.DateTimeFormat('default').format(daDate2);
 console.log(daDate3);
 
 
+// Arrays and Objects
+
+// Arrays - Special type of object and a data structure in javascript that can store multiple values
+
+/*
+
+Values inside the array are called elements
+Arrays are 0 based; the first index of an array is 0 and not 1
+
+*/
+
+// Array Literal
+
+let newArr = [12,45,33,29,39];
 
 
+
+// Array Constructor
+
+let arrFruits = new Array('apples', 'oranges', 'bananas', 'strawberries', 'grapes');
+
+console.log(arrFruits);
+
+// Access items from the array
+
+let arrAccess = newArr[1];
+
+console.log(arrAccess);
+
+// Array Length
+
+let arrLength = arrFruits.length;
+
+console.log(arrLength);
+
+// Basic Array Methods
+
+// Push - Puts a value at the end of array
+
+// newArr.push[100];
+
+// // Pop - delete a value from the end of the array
+
+// newArr.pop[100];
+
+// // unshift - add on to the beginning
+
+// newArr.unshift[84];
+
+// // shift - remove element from the beginning
+
+// newArr.shift[84];
+
+// // reverse
+
+// newArr.reverse();
+
+// includes - checks if a specific value is in the array
+
+newArr.includes(39);
+
+// indexOf - returns the index of a value in the 
+// If the value is not found it returns  -1
+
+let arrIndex = newArr.indexOf(34);
+
+console.log(arrIndex)
+
+// Slice and Splice
+
+let newArr2 = [34,55,95,20,15]
+
+let arrSlice = newArr2.slice(0,4); // First number is the starting index where do you want to begin, the 2nd number is where you want to end
+
+// Splice is similar to Slice except that it can change the original array
 
 
 
